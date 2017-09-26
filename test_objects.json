@@ -1,0 +1,16 @@
+{
+  "user": {
+    "firstName": "test",
+    "lastName": "test",
+    "lastmodDate": 1506462445206,
+    "supportRole": true,
+    "phone": "test",
+    "adminRole": true,
+    "company": "test",
+    "id": "c20fb7f4-5fa9-4c23-ac80-28a40c8ab166",
+    "userRole": true,
+    "patronym": "test",
+    "email": "test",
+    "createDate": 1506462445206
+  }
+}
