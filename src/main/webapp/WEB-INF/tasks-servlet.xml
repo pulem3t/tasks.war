@@ -22,13 +22,13 @@
      <property name="location" value="classpath:config.properties"></property>
    </bean>
    
-   <bean id="hibernateConfig" class="org.pulem3t.tasks.config.HibernateConfig" />
+    <bean id="config" class="org.pulem3t.tasks.config.${daoType}Config" />
     
     <bean id="persistenceExceptionTranslationPostProcessor"  class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor" />  
   	
-    <bean id="taskDao" class="org.pulem3t.tasks.dao.${daoTypePackage}.TaskDAO${daoType}" />
-    <bean id="userDao" class="org.pulem3t.tasks.dao.${daoTypePackage}.UserDAO${daoType}" />
-    <bean id="commentDao" class="org.pulem3t.tasks.dao.${daoTypePackage}.CommentDAO${daoType}" />
+    <bean id="taskDAO" class="org.pulem3t.tasks.dao.${daoTypePackage}.TaskDAO${daoType}" />
+    <bean id="userDAO" class="org.pulem3t.tasks.dao.${daoTypePackage}.UserDAO${daoType}" />
+    <bean id="commentDAO" class="org.pulem3t.tasks.dao.${daoTypePackage}.CommentDAO${daoType}" />
     
     <bean id="taskService" class="org.pulem3t.tasks.service.TaskService" />
  	<bean id="userService" class="org.pulem3t.tasks.service.UserService" />
