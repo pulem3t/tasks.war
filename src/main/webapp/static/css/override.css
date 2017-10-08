@@ -1,0 +1,30 @@
+/* This file overrides styles from materialize.css */
+
+.container {
+    width: 90%;
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+    color: rgba(0, 0, 0, .87);
+}
+
+.select-dropdown {
+    color: #9e9e9e;
+}
+
+nav {
+    background-color: #003d99;
+}
+
+.collection a.collection-item {
+    background-color: #003d99;
+    color: #fff;
+}
+
+.page-footer {
+    background-color: #4d4d4d;
+}
+
+.btn {
+    min-width: 150px;
+}

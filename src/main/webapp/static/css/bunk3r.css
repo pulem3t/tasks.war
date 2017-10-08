@@ -1,0 +1,56 @@
+/* Main css file */
+
+#createTaskBlock {
+    display: none;
+}
+
+#saveTaskModal {
+    width: 400px;
+}
+
+#submitTaskBtn {
+    margin-top: 26px;
+}
+
+.bunk3r-required-mark {
+    font-size: 50%;
+    top: -1em;
+    color: red;
+}
+
+.bunk3r-content {
+    width: 1000px;
+}
+
+.bunk3r-nav-login {
+    background-color: #06f;
+}
+
+.bunk3r-footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.bunk3r-btn-green {
+    background-color: #090;
+}
+
+.bunk3r-btn-grey {
+    color: #4d4d4d;
+    background-color: #d9d9d9;
+}
+
+.bunk3r-btn-green:hover {
+    background-color: #00b300;
+}
+
+.bunk3r-btn-grey:hover {
+    color: #4d4d4d;
+    background-color: #e6e6e6;
+}
+
+.bunk3r-menu {
+    margin-top: 52px;
+}

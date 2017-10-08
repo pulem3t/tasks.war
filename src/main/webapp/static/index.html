@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Tasks</title>
+
+  <link rel="stylesheet" href="css/materialize.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/override.css">
+  <link rel="stylesheet" href="css/bunk3r.css">
+
+</head>
+
+<body>
+  <div class="row">
+    <nav>
+      <div class="nav-wrapper">
+        <div class="col s12">
+          <a href="#" class="brand-logo"><i class="fa fa-hashtag" aria-hidden="true"></i></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#">Tasks</a></li>
+            <li><a href="#">Users</a></li>
+            <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="container">
+    <div id="taskListBlock" class="row">
+      <div class="col s2 bunk3r-menu">
+        <a id="createTaskBtn" class="waves-effect waves-light btn bunk3r-btn-green">
+          <i class="fa fa-file-o bunk3r-btn-icon" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Create
+        </a>
+      </div>
+      <div class="col s10 bunk3r-task-list">
+        <table>
+          <thead>
+            <th>Task name</th>
+            <th>Performer</th>
+            <th>Priority</th>
+            <th>Created</th>
+            <th>Deadline</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="display: none;">id</td>
+              <td><a href="#">[TEST] Test task</a></td>
+              <td>user</td>
+              <td>high</td>
+              <td>27 Sep 2017</td>
+              <td>1 Oct 2017</td>
+            </tr>
+            <tr>
+              <td style="display: none;">id</td>
+              <td><a href="#">[TEST] Test task</a></td>
+              <td>user</td>
+              <td>high</td>
+              <td>27 Sep 2017</td>
+              <td>1 Oct 2017</td>
+            </tr>
+            <tr>
+              <td style="display: none;">id</td>
+              <td><a href="#">[TEST] Test task</a></td>
+              <td>user</td>
+              <td>high</td>
+              <td>27 Sep 2017</td>
+              <td>1 Oct 2017</td>
+            </tr>
+            <tr>
+              <td style="display: none;">id</td>
+              <td><a href="#">[TEST] Test task</a></td>
+              <td>user</td>
+              <td>high</td>
+              <td>27 Sep 2017</td>
+              <td>1 Oct 2017</td>
+            </tr>
+            <tr>
+              <td style="display: none;">id</td>
+              <td><a href="#">[TEST] Test task</a></td>
+              <td>user</td>
+              <td>high</td>
+              <td>27 Sep 2017</td>
+              <td>1 Oct 2017</td>
+            </tr>
+            <tr>
+              <td style="display: none;">id</td>
+              <td><a href="#">[TEST] Test task</a></td>
+              <td>user</td>
+              <td>high</td>
+              <td>27 Sep 2017</td>
+              <td>1 Oct 2017</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="createTaskBlock">
+      <div class="row">
+        <div class="col s2 bunk3r-menu">
+          <a id="backFromTaskBtn" class="waves-effect waves-light btn bunk3r-btn-grey">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Return
+          </a>
+        </div>
+        <form class="col s10">
+          <h4>Create task</h4>
+          <div class="row">
+            <div class="input-field col s3">
+              <input id="taskPrefix" type="text" class="task-required">
+              <label for="taskPrefix">Prefix&nbsp;
+                <sup class="bunk3r-required-mark"><i class="fa fa-asterisk" aria-hidden="true"></i></sup>
+              </label>
+            </div>
+            <div class="input-field col s9">
+              <input id="taskTitle" type="text" class="task-required">
+              <label for="taskTitle">Title&nbsp;
+                <sup class="bunk3r-required-mark"><i class="fa fa-asterisk" aria-hidden="true"></i></sup>
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <select id="taskPerformer" class="task-required">
+                <option value="" disabled selected>Choose performer</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+              </select>
+              <label>Performer&nbsp;
+                <sup class="bunk3r-required-mark"><i class="fa fa-asterisk" aria-hidden="true"></i></sup>
+              </label>
+            </div>
+            <div class="input-field col s6">
+              <select id="parentTask">
+                <option value="" selected>Choose parent task</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+              </select>
+              <label>Parent Task</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="taskDescription" class="materialize-textarea task-required"></textarea>
+              <label for="taskDescription">Description&nbsp;
+                <sup class="bunk3r-required-mark"><i class="fa fa-asterisk" aria-hidden="true"></i></sup>
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s4">
+              <select id="taskPriority" class="task-required">
+                <option value="" selected>Choose priority</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+              </select>
+              <label>Priority&nbsp;
+                <sup class="bunk3r-required-mark"><i class="fa fa-asterisk" aria-hidden="true"></i></sup>
+              </label>
+            </div>
+            <div class="input-field col s4">
+              <input id="taskDeadLine" type="text" class="task-required">
+              <label for="taskDeadLine">Dead Line&nbsp;
+                <sup class="bunk3r-required-mark"><i class="fa fa-asterisk" aria-hidden="true"></i></sup>
+              </label>
+            </div>
+            <a id="submitTaskBtn" class="waves-effect waves-light btn bunk3r-btn-green col s4">
+              <i class="fa fa-check bunk3r-btn-icon" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Save task
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer class="page-footer bunk3r-footer">
+    <div class="footer-copyright">
+      <div class="container">
+        © 2017 bunk3r
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="saveTaskModal" class="modal">
+    <div class="modal-content">
+      <h4>Save task</h4>
+      <p>Are you sure?</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Cancel</a>
+      <a id="saveTaskBtn" href="#!" class="waves-effect waves-green btn-flat">Ok</a>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.2.1.js" charset="utf-8"></script>
+  <script src="js/materialize.js" charset="utf-8"></script>
+  <script src="js/scripts.js" charset="utf-8"></script>
+</body>
+
+</html>
