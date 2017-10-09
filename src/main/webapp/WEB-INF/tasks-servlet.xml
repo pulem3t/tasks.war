@@ -12,9 +12,7 @@
     <mvc:resources mapping="/**" location="/static/" />
     <mvc:resources mapping="/js/**" location="/static/js/" />
     <mvc:resources mapping="/css/**" location="/static/css/" />
-    <mvc:resources mapping="/img/**" location="/static/img/" />
-    <mvc:resources mapping="/lib-js/**" location="/static/lib-js/" />
-    <mvc:resources mapping="/lib-css/**" location="/static/lib-css/" />
+    <mvc:resources mapping="/images/**" location="/static/images/" />
     <mvc:resources mapping="favicon.jpg" location="/static/" />
     <mvc:resources mapping="index.html" location="/static/" />
     
@@ -33,5 +31,10 @@
     <bean id="taskService" class="org.pulem3t.tasks.service.TaskService" />
  	<bean id="userService" class="org.pulem3t.tasks.service.UserService" />
  	<bean id="commentService" class="org.pulem3t.tasks.service.CommentService" />
+ 	
+ 	<bean id="ta" class="org.pulem3t.tasks.adapter.TaskAdapter" />
+ 	<bean id="ca" class="org.pulem3t.tasks.adapter.CommentAdapter" />
+ 	
+ 	<bean id="taskMapper" class="org.pulem3t.tasks.mapper.TaskRowMapper" />
  	
 </beans>

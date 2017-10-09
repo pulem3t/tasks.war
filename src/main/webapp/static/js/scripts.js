@@ -14,13 +14,13 @@ $(document).ready(function() {
     var data = {};
     data.prefix = $("#taskPrefix").val();
     data.title = $("#taskTitle").val();
-    data.authorId = "";
+    //Test user
+    data.authorId = "ac128533-afb6-45e9-9386-96c2bc89d4b6";
     data.performerId = $("#taskPerformer option:selected").val();
-    data.parentTaskId = $("#parentTask option:selected").val();
     data.description = $("#taskDescription").val();
-    data.priority = $("#taskPriority option:selected").val();
-    data.deadLine = $("#taskDeadLine").val();
-    return data;
+    data.priority = parseInt($("#taskPriority option:selected").val());
+    data.deadLine = parseInt($("#taskDeadLine").val());
+    return {task: data};
   }
 
   $("select").material_select();
@@ -30,16 +30,30 @@ $(document).ready(function() {
     $("#taskListBlock").css("display","none");
     $("#createTaskBlock").css("display","block");
   });
+
   $("#backFromTaskBtn").on("click", function () {
     $("#createTaskBlock").css("display","none");
     $("#taskListBlock").css("display","block");
   });
+
   $("#submitTaskBtn").on("click", function () {
     $("#saveTaskModal").modal("open");
   });
+
   $("#saveTaskBtn").on("click", function () {
     if(validateTask()) {
-      
+      var data = getTaskData();
+      console.log(JSON.stringify(data));
+      $.ajax({
+        url: 'tasks/addTask',
+        type: 'POST',
+        dataType: 'json',
+        data: JSON.stringify(data),
+        contentType: "application/json; charset=utf-8"
+      })
+      .done(function(res) {
+        console.log(res);
+      });
     }
   });
 });

@@ -124,22 +124,30 @@
             <div class="input-field col s6">
               <select id="taskPerformer" class="task-required">
                 <option value="" disabled selected>Choose performer</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
+                <option value="ac128533-afb6-45e9-9386-96c2bc89d4b6">Option 1</option>
+                <option value="ac128533-afb6-45e9-9386-96c2bc89d4b6">Option 2</option>
+                <option value="ac128533-afb6-45e9-9386-96c2bc89d4b6">Option 3</option>
               </select>
               <label>Performer&nbsp;
                 <sup class="bunk3r-required-mark"><i class="fa fa-asterisk" aria-hidden="true"></i></sup>
               </label>
             </div>
-            <div class="input-field col s6">
-              <select id="parentTask">
-                <option value="" selected>Choose parent task</option>
+            <div class="input-field col s3">
+              <select id="taskPriority" class="task-required">
+                <option value="" selected>Choose priority</option>
                 <option value="1">Option 1</option>
                 <option value="2">Option 2</option>
                 <option value="3">Option 3</option>
               </select>
-              <label>Parent Task</label>
+              <label>Priority&nbsp;
+                <sup class="bunk3r-required-mark"><i class="fa fa-asterisk" aria-hidden="true"></i></sup>
+              </label>
+            </div>
+            <div class="input-field col s3">
+              <input id="taskDeadLine" type="text" class="task-required">
+              <label for="taskDeadLine">Dead Line&nbsp;
+                <sup class="bunk3r-required-mark"><i class="fa fa-asterisk" aria-hidden="true"></i></sup>
+              </label>
             </div>
           </div>
           <div class="row">
@@ -151,22 +159,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="input-field col s4">
-              <select id="taskPriority" class="task-required">
-                <option value="" selected>Choose priority</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-              </select>
-              <label>Priority&nbsp;
-                <sup class="bunk3r-required-mark"><i class="fa fa-asterisk" aria-hidden="true"></i></sup>
-              </label>
-            </div>
-            <div class="input-field col s4">
-              <input id="taskDeadLine" type="text" class="task-required">
-              <label for="taskDeadLine">Dead Line&nbsp;
-                <sup class="bunk3r-required-mark"><i class="fa fa-asterisk" aria-hidden="true"></i></sup>
-              </label>
+            <div class="input-field col s8">
             </div>
             <a id="submitTaskBtn" class="waves-effect waves-light btn bunk3r-btn-green col s4">
               <i class="fa fa-check bunk3r-btn-icon" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Save task
